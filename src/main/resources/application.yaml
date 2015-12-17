@@ -3,3 +3,7 @@ spring:
   social:
     twitter:
       app-id:ReikJO3eqK7I9akNOO7HchDCB      app-secret: zOyOiR5LP55Q4JR8nJ4Ax4ucLTXsSsDrdLwJcSfhkIMWF5iqld
+  messages:
+    cache-seconds: 0
+logging:
+  level: org.springframework.web:DEBUG
