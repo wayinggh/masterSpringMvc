@@ -1,12 +1,9 @@
 package com.github.spring.filter;
 
-import org.springframework.stereotype.Component;
-
 import javax.servlet.*;
 import java.io.IOException;
 
-@Component
-public class CharacterEncodingFilter implements Filter{
+public class CharacterEncodingFilter implements Filter {
     public static final String DEFAULT_ENCODING = "UTF-8";
     private String encoding;
     private boolean forceEncoding;
@@ -48,4 +45,11 @@ public class CharacterEncodingFilter implements Filter{
         return this.encoding;
     }
 
+    public boolean isForceEncoding() {
+        return forceEncoding;
+    }
+
+    public void setForceEncoding(boolean forceEncoding) {
+        this.forceEncoding = forceEncoding;
+    }
 }
